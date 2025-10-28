@@ -6,3 +6,22 @@
 // se non è divisibile per 3 controllare se è divisibile per 5
 // se è divisibile per 5 sostituire il numero con "Buzz"
 // se il numero non è divisibile per nessuno dei due stampare il numero
+
+for (let i = 1; i <= 100; i++) {
+
+  let res = i;
+
+  if ((i % 3) === 0) {
+    res = "Fizz";
+
+    if ((i % 5) === 0) {
+      res = "FizzBuzz";
+    }
+  }
+  else {
+    if ((i % 5) === 0) {
+      res = "Buzz";
+    }
+  }
+  console.log(res);
+}
